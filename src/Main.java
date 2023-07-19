@@ -6,6 +6,20 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!\r\n");
 
+        try {
+            Connection connection = DriverManager.getConnection(url "jdbc:mysql://localhost:3306/jdbc-test", user:"root", password:"toor");
+
+            Statement statement = connection.creatStatement();
+
+            ResultSet resultSet = statement.executeQuery( sql: "select * from people");
+
+            while (resultSet.next()) {
+                System.out.prinln(resultSet.getString(columnLabel: "name"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
         for (int i = 1; i <= 5; i++) {
 
