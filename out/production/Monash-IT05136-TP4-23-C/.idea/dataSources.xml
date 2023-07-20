@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="manage-jss-cloud@teamc-jss.database.windows.net" uuid="16da8c79-adce-4b85-af28-4df84019ba59">
+      <driver-ref>azure.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://teamc-jss.database.windows.net:1433;encrypt=true;trustServerCertificate=false;loginTimeout=30;database=manage-jss-cloud;</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="AZURE_SQL_DB_SERVER" value="/subscriptions/a3691036-b1ab-45b2-a9fd-438edcd6c01f/resourceGroups/TeamC-ITO5136-TP4-2023/providers/Microsoft.Sql/servers/teamc-jss" />
+      </jdbc-additional-properties>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
