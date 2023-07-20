@@ -25,11 +25,11 @@ public class Main {
 
                 // Process the query results
                 while (resultSet.next()) {
-                    // Assuming 'dbo.tbl_dbt_User' table has 'username' and 'email' columns
-                    String firstname = resultSet.getString("firstname");
-                    String lastname = resultSet.getString("lastname");
-
-                    System.out.println("FirstName: " + firstname + ", LastName: " + lastname);
+                    // Print all columns from the result set
+                    for (int i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
+                        System.out.print(resultSet.getString(i) + "\t");
+                    }
+                    System.out.println();
                 }
 
             } catch (SQLException e) {
