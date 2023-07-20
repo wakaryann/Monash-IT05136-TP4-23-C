@@ -17,7 +17,7 @@ public class Main {
             // Now that you are connected, you can use the connection for database operations.
 
             // For example, let's create a simple query to retrieve some data from 'dbo.tbl_dbt_User' table.
-            String sqlQuery = "SELECT * FROM dbo.tbl_dbt_User;";
+            String sqlQuery = "SELECT * FROM dbo.tbl_dbt_User";
 
             // Execute the query
             try (Statement statement = connection.createStatement();
